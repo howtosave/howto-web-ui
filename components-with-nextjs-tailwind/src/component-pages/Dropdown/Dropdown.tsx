@@ -9,6 +9,8 @@ function classNames(...classes: any[]) {
 
 const Dropdown: React.FC<{}> = () => {
   return (
+    <div className="fixed top-16 w-56 text-right">
+
     <Menu as="div" className="relative inline-block text-left">
       <div>
         <Menu.Button className="inline-flex w-full justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-100">
@@ -86,6 +88,7 @@ const Dropdown: React.FC<{}> = () => {
         </Menu.Items>
       </Transition>
     </Menu>
+    </div>
   );
 }
 
