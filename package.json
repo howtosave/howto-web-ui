@@ -1,0 +1,11 @@
+{
+  "name": "howto-web-ui",
+  "private": true,
+  "license": "MIT",
+  "resolutions": {
+    "webpack": "^5"
+  },
+  "workspaces": [
+    "components-*"
+  ]
+}
