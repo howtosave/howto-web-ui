@@ -1,13 +1,14 @@
 {
-  "name": "components-with-nextjs-tailwind",
+  "name": "tailwindcss-with-nextjs",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "storybook-static/index.html",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "sb": "start-storybook -p 6006",
-    "build:sb": "build-storybook"
+    "build:sb": "build-storybook --output-dir build-storybook/tailwindcss-with-nextjs",
+    "publish:sb": "cd $INIT_CWD/build-storybook;git add .;git commit -m 'build';git push"
   },
   "dependencies": {
     "@headlessui/react": "~1.7.4",

@@ -29,3 +29,15 @@ yarn dev
 npx storybook init
 
 ```
+
+### Publish storybook build to Github pages
+
+```sh
+# build storybook
+yarn build:sb
+
+# upload to github pages
+cd build-storybook
+git commit -a -m "build tailwindcss-with-nextjs storybook"
+git push
+```

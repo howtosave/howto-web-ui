@@ -6,6 +6,6 @@
     "webpack": "^5"
   },
   "workspaces": [
-    "tainwindcss-*"
+    "tailwindcss-*"
   ]
 }

@@ -1,0 +1,3 @@
+[submodule "tailwindcss-with-nextjs/build-storybook"]
+	path = tailwindcss-with-nextjs/build-storybook
+	url = git@github.com:aistyler/howto-web-ui__tailwindcss-with-nextjs__storybook.git
