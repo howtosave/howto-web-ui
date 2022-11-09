@@ -1,4 +1,4 @@
-# Components using NextJS and TainWindCSS
+# Components using Tailwind CSS with NextJS
 
 ## Getting Started
 
@@ -13,7 +13,11 @@ yarn sb
 yarn dev
 ```
 
-## Tailwind CSS
+## Liveview
+
+- [StoryBook Build](https://aistyler.github.io/howto-ghpages/tailwindcss-with-nextjs)
+
+## Tailwind CSS References
 
 - [daisyUI](https://daisyui.com/)
 - [Layout](https://tailwindcss.com/docs/aspect-ratio)
