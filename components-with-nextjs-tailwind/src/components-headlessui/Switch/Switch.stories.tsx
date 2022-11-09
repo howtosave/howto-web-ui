@@ -4,7 +4,7 @@ import { within, userEvent } from '@storybook/testing-library';
 import Switch from './Switch';
 
 export default {
-  title: `Components/${Switch.name}`,
+  title: `Components-headlessui/${Switch.name}`,
   component: Switch,
   parameters: {
     // More on Story layout: https://storybook.js.org/docs/react/configure/story-layout

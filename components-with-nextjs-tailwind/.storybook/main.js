@@ -1,5 +1,7 @@
 module.exports = {
   stories: [
+    "../stories/*.stories.mdx",
+    "../stories/*.stories.@(js|jsx|ts|tsx)",
     "../src/component*/**/*.stories.mdx",
     "../src/component*/**/*.stories.@(js|jsx|ts|tsx)",
   ],
@@ -24,4 +26,14 @@ module.exports = {
     builder: 'webpack5',
   },
   framework: "@storybook/react",
+  features: {
+    // storyStoreV7: true,
+    postcss: false,
+  },
+  // refs: {
+  //   'design-system': {
+  //     title: 'Storybook Design System',
+  //     url: 'https://5ccbc373887ca40020446347-yldsqjoxzb.chromatic.com',
+  //   },
+  // },
 }

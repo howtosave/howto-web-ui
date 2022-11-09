@@ -1,35 +1,22 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { within, userEvent } from '@storybook/testing-library';
-import Dropdown from './Dropdown';
+import SVGIcon from './SVGIcon';
 
 export default {
-  title: `Components/${Dropdown.name}`,
-  component: Dropdown,
+  title: `Components-headlessui/${SVGIcon.name}`,
+  component: SVGIcon,
   parameters: {
     // More on Story layout: https://storybook.js.org/docs/react/configure/story-layout
   },
-} as ComponentMeta<typeof Dropdown>;
+} as ComponentMeta<typeof SVGIcon>;
 
-const Template: ComponentStory<typeof Dropdown> = (args) => <Dropdown {...args} />;
+const Template: ComponentStory<typeof SVGIcon> = (args) => <SVGIcon {...args} />;
 
 export const Primary = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 Primary.args = {
-  label: 'Options',
-  menuItems: [
-    { label: '', items: [
-      { label: 'Edit', icon: 'edit' },
-      { label: 'Duplicate', icon: 'duplicate' },
-    ]},
-    { label: '', items: [
-      { label: 'Archive', icon: 'archive' },
-      { label: 'Move', icon: 'move' },
-    ] },
-    { label: '', items: [
-      { label: 'Delete', icon: 'delete' },
-    ] },
-  ],
+  name: 'edit-inactive'
 };
 
 // More on interaction testing: https://storybook.js.org/docs/react/writing-tests/interaction-testing

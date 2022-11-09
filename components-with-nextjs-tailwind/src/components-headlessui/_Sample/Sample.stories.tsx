@@ -1,18 +1,17 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { within, userEvent } from '@storybook/testing-library';
-import Tabs from './Tabs';
+import Sample from './Sample';
 
 export default {
-  title: `Component-pages/${Tabs.name}`,
-  component: Tabs,
+  title: `Components-headlessui/${Sample.name}`,
+  component: Sample,
   parameters: {
     // More on Story layout: https://storybook.js.org/docs/react/configure/story-layout
-    layout: 'fullscreen',
   },
-} as ComponentMeta<typeof Tabs>;
+} as ComponentMeta<typeof Sample>;
 
-const Template: ComponentStory<typeof Tabs> = (args) => <Tabs {...args} />;
+const Template: ComponentStory<typeof Sample> = (args) => <Sample {...args} />;
 
 export const Primary = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args

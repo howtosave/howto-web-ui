@@ -4,7 +4,7 @@ import { within, userEvent } from '@storybook/testing-library';
 import RadioGroupA from './RadioGroup';
 
 export default {
-  title: `Components/${RadioGroupA.name}`,
+  title: `Components-headlessui/${RadioGroupA.name}`,
   component: RadioGroupA,
   parameters: {
     // More on Story layout: https://storybook.js.org/docs/react/configure/story-layout

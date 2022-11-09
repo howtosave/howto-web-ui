@@ -1,22 +1,25 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { within, userEvent } from '@storybook/testing-library';
-import Tabs from './Tabs';
+import DisclosureA from './Disclosure';
 
 export default {
-  title: `Component-pages/${Tabs.name}`,
-  component: Tabs,
+  title: `Components-headlessui/${DisclosureA.name}`,
+  component: DisclosureA,
   parameters: {
     // More on Story layout: https://storybook.js.org/docs/react/configure/story-layout
-    layout: 'fullscreen',
   },
-} as ComponentMeta<typeof Tabs>;
+} as ComponentMeta<typeof DisclosureA>;
 
-const Template: ComponentStory<typeof Tabs> = (args) => <Tabs {...args} />;
+const Template: ComponentStory<typeof DisclosureA> = (args) => <DisclosureA {...args} />;
 
 export const Primary = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 Primary.args = {
+  label: <span>What is your refund policy?</span>,
+  panel: <p>If you're unhappy with your purchase for any reason, email us
+  within 90 days and we'll refund you in full, no questions asked.</p>,
+  defaultOpen: true,
 };
 
 // More on interaction testing: https://storybook.js.org/docs/react/writing-tests/interaction-testing

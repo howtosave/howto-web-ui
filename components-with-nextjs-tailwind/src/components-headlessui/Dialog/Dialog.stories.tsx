@@ -4,7 +4,7 @@ import { within, userEvent } from '@storybook/testing-library';
 import Dialog from './Dialog';
 
 export default {
-  title: `Components/${Dialog.name}`,
+  title: `Components-headlessui/${Dialog.name}`,
   component: Dialog,
   parameters: {
     // More on Story layout: https://storybook.js.org/docs/react/configure/story-layout
