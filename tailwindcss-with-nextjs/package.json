@@ -7,8 +7,8 @@
     "build": "next build",
     "start": "next start",
     "sb": "start-storybook -p 6006",
-    "build:sb": "build-storybook --output-dir build-storybook/tailwindcss-with-nextjs",
-    "publish:sb": "cd build-storybook && git add . && git commit -m 'build' && git push"
+    "sb:build": "build-storybook --output-dir ../docs/tailwindcss-with-nextjs-storybook-static",
+    "sb:serve": "serve build-storybook/tailwindcss-with-nextjs"
   },
   "dependencies": {
     "@headlessui/react": "~1.7.4",

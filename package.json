@@ -3,8 +3,7 @@
   "private": true,
   "license": "MIT",
   "scripts": {
-    "build:tailwind:sb": "lerna run build:sb --scope=tailwindcss-with-nextjs",
-    "publish:tailwind:sb": "lerna run publish:sb --scope=tailwindcss-with-nextjs"
+    "build:sb": "lerna run sb:build --scope=tailwindcss-with-nextjs"
   },
   "devDependencies": {
     "lerna": "^6.0.3"
